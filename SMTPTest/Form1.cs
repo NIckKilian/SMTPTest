@@ -29,8 +29,7 @@ namespace SMTPTest
 
 		private void btnSend_Click(object sender, EventArgs e) {
 			rtf_output.Text = "";
-		
-			label11.Visible = false;
+
 			SMTPserver = txt_SMTPServer.Text.Trim();
 			if (SMTPport.ToString().Length > 0)
 			{
@@ -95,9 +94,7 @@ namespace SMTPTest
 			catch (Exception ep)
 			{
 				btnSend.BackColor = Color.LightSalmon;
-				rtf_output.Text = ep.Message;			}			
-		
-			label11.Visible = true;
+				rtf_output.Text = ep.Message;			}	
 		}
 
 		private void button2_Click(object sender, EventArgs e)
